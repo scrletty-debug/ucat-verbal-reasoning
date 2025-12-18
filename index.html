@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verbal Reasoning - UCAT Guide</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const { useState } = React;
+
+    function VerbalReasoning() {
+      const [hoveredBlob, setHoveredBlob] = useState(null);
+      const [hoveredSection, setHoveredSection] = useState(null);
+      const [hoveredNav, setHoveredNav] = useState(null);
+
+      const scrollToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      return (
+        <div className="relative min-h-screen bg-gradient-to-b from-blue-100 via-blue-50 to-white overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+          {/* Navigation Bar */}
+          <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-lg">
+            <div className="flex items-center justify-center gap-4 py-4 px-6">
+              {[
+                { id: 'overview', label: 'Overview', color: 'blue' },
+                { id: 'types', label: 'Types', color: 'indigo' },
+                { id: 'method', label: 'Method', color: 'sky' },
+                { id: 'skills', label: 'Skills', color: 'cyan' },
+                { id: 'techniques', label: 'Techniques', color: 'blue' },
+                { id: 'practice', label: 'Practice', color: 'indigo' },
+                { id: 'tips', label: 'Tips', color: 'violet' }
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  onMouseEnter={() => setHoveredNav(item.id)}
+                  onMouseLeave={() => setHoveredNav(null)}
+                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                    hoveredNav === item.id 
+                      ? `bg-${item.color}-400/30 scale-105 shadow-md` 
+                      : 'bg-transparent hover:bg-gray-100/50'
+                  }`}
+                  style={{
+                    backgroundColor: hoveredNav === item.id ? `rgba(${
+                      item.color === 'blue' ? '59, 130, 246' :
+                      item.color === 'indigo' ? '99, 102, 241' :
+                      item.color === 'sky' ? '14, 165, 233' :
+                      item.color === 'cyan' ? '6, 182, 212' :
+                      item.color === 'violet' ? '139, 92, 246' : '59, 130, 246'
+                    }, 0.3)` : undefined
+                  }}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </nav>
+
+          {/* Glassmorphic floating blobs */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div 
+              className={`absolute top-[5%] left-[8%] w-64 h-64 bg-blue-400/30 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 1 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(1)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+            
+            <div 
+              className={`absolute top-[15%] right-[10%] w-80 h-80 bg-blue-300/25 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 2 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(2)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+            
+            <div 
+              className={`absolute top-[40%] left-[15%] w-72 h-72 bg-indigo-400/30 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 3 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(3)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+            
+            <div 
+              className={`absolute top-[35%] right-[25%] w-56 h-56 bg-cyan-400/25 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 4 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(4)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+            
+            <div 
+              className={`absolute bottom-[20%] right-[8%] w-68 h-68 bg-blue-500/30 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 5 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(5)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+            
+            <div 
+              className={`absolute bottom-[10%] left-[12%] w-80 h-80 bg-sky-400/25 rounded-full blur-3xl transition-all duration-700 ease-out cursor-pointer ${hoveredBlob === 6 ? 'scale-125 -translate-y-8' : ''}`}
+              onMouseEnter={() => setHoveredBlob(6)}
+              onMouseLeave={() => setHoveredBlob(null)}
+            ></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 space-y-8 p-6 pt-28">
+            <header className="text-center py-12 mb-8">
+              <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent mb-3" style={{ letterSpacing: '-0.02em' }}>Verbal Reasoning</h1>
+              <p className="text-black/80 text-2xl font-normal">UCAT Section Guide</p>
+            </header>
+
+            {/* Overview */}
+            <section 
+              id="overview"
+              className={`group backdrop-blur-xl border-l-4 border-blue-500 p-8 transition-all duration-700 ${hoveredSection === 'overview' ? 'bg-blue-300/35 shadow-xl scale-[1.01]' : 'bg-blue-300/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('overview')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent mb-4">Overview</h2>
+                  <div className="space-y-2 text-black/90">
+                    <p>44 questions in <strong className="font-semibold text-blue-600">22 minutes</strong> - approximately <strong className="font-semibold text-blue-600">30 seconds</strong> per question</p>
+                    <p>11 sets total: <strong className="font-semibold text-blue-600">7 reading comprehension</strong> sets and <strong className="font-semibold text-blue-600">4 true/false/can't tell</strong> sets</p>
+                  </div>
+                  <h3 className="text-lg text-black/80 font-medium mt-4 mb-2">Passage Reading Strategy</h3>
+                  <ul className="list-disc list-inside text-black/90 space-y-2">
+                    <li>Spend 30-45 seconds <strong className="font-semibold text-blue-600">skimming</strong> the passage first to understand structure and main ideas</li>
+                    <li>Alternative: Read 2 questions first, then skim passage with those questions in mind</li>
+                    <li>Use keyword scanning only after reading the passage, not as a replacement for understanding</li>
+                    <li>Goal: Actively absorb the <strong className="font-semibold text-blue-600">core content</strong> and overall argument</li>
+                  </ul>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent leading-none">44</div>
+                  <div className="text-base text-black/70 mt-3">questions</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Types of Questions */}
+            <section 
+              id="types"
+              className={`group backdrop-blur-xl border-l-4 border-indigo-500 p-8 transition-all duration-700 ${hoveredSection === 'types' ? 'bg-indigo-300/35 shadow-xl scale-[1.01]' : 'bg-indigo-300/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('types')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent mb-4">Types of Questions</h2>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-3">True/False/Can't Tell</h3>
+                      <div className="space-y-2 text-black/90">
+                        <p><strong className="font-semibold text-indigo-600">False:</strong> If any part of the statement is incorrect or contradicts the text</p>
+                        <p><strong className="font-semibold text-indigo-600">Can't Tell:</strong> If information needed to verify the statement is not present in the text</p>
+                        <p>Three main types:</p>
+                        <ul className="list-disc list-inside ml-4 space-y-1">
+                          <li><strong className="font-semibold text-indigo-600">Direct inference:</strong> Straightforward conclusion from stated information</li>
+                          <li><strong className="font-semibold text-indigo-600">Indirect reference:</strong> Requires evidence from multiple parts of the text</li>
+                          <li><strong className="font-semibold text-indigo-600">Indirect assumption:</strong> Tests logical connections between ideas</li>
+                        </ul>
+                        <p>Select Can't Tell when there is a logical <strong className="font-semibold text-indigo-600">gap</strong> between the text and the claim, or when degree of certainty (e.g., "may," "might") isn't strong enough</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-3">Reading Comprehension Question Types</h3>
+                      <div className="space-y-3 text-black/90">
+                        <div>
+                          <p className="font-medium">1. Fill in the Blank</p>
+                          <p className="ml-4">Scan for the <strong className="font-semibold text-indigo-600">keyword</strong> from the introductory sentence and confirm from context</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">2. True/False/Cannot Be Inferred</p>
+                          <p className="ml-4">Verify each statement <strong className="font-semibold text-indigo-600">separately</strong> and systematically</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">3. Synonym or Meaning</p>
+                          <p className="ml-4">Focus on the <strong className="font-semibold text-indigo-600">context</strong> of the word in the passage, not dictionary definition</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">4. Author's Opinion</p>
+                          <p className="ml-4">Identify the author's <strong className="font-semibold text-indigo-600">tone</strong> and stance. Predictions can be wrong, comments are opinions, but statistics support facts.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">5. Summary, Aim, or Tone</p>
+                          <p className="ml-4">Aim refers to the <strong className="font-semibold text-indigo-600">purpose</strong> for which the text was written. Check if it covers the whole passage or just part of it.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-indigo-400 to-purple-600 bg-clip-text text-transparent leading-none">2</div>
+                  <div className="text-base text-black/70 mt-3">types</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Method */}
+            <section 
+              id="method"
+              className={`backdrop-blur-xl border-l-4 border-sky-500 p-8 transition-all duration-700 ${hoveredSection === 'method' ? 'bg-sky-300/35 shadow-xl scale-[1.01]' : 'bg-sky-300/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('method')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-cyan-600 bg-clip-text text-transparent mb-4">Recommended Method</h2>
+                  <ol className="list-decimal list-inside text-black/90 space-y-2">
+                    <li>Skim the text and make mental notes of the <strong className="font-semibold text-sky-600">structure</strong> and content for each paragraph. Actively read for people, events, and overall structure</li>
+                    <li>Read the question and highlight what it is asking for (true, false, cannot be inferred, or <strong className="font-semibold text-sky-600">negating terms</strong> like "do not")</li>
+                    <li><strong className="font-semibold text-sky-600">Verify</strong> the answer by searching for keywords (nouns and objects that are not the main subject)</li>
+                    <li>Repeat steps 2-3 for the remaining questions in the set</li>
+                  </ol>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-sky-400 to-cyan-600 bg-clip-text text-transparent leading-none">4</div>
+                  <div className="text-base text-black/70 mt-3">steps</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Skills */}
+            <section 
+              id="skills"
+              className={`backdrop-blur-xl border-l-4 border-cyan-500 p-8 transition-all duration-700 ${hoveredSection === 'skills' ? 'bg-cyan-300/35 shadow-xl scale-[1.01]' : 'bg-cyan-300/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('skills')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-500 to-teal-600 bg-clip-text text-transparent mb-4">Essential Skills</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Qualifiers</h3>
+                      <p className="text-black/90 mb-2">Qualifiers change the context and difficulty of questions:</p>
+                      <p className="text-black/90"><strong className="font-semibold text-cyan-600">Soft qualifiers</strong> (some, partly, may): More likely to be true/can't tell, difficult to disprove</p>
+                      <p className="text-black/90"><strong className="font-semibold text-cyan-600">Extreme qualifiers</strong> (all, always, never): More likely to be false, difficult to prove</p>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Inferences</h3>
+                      <p className="text-black/90 mb-2">Draw logical <strong className="font-semibold text-cyan-600">conclusions</strong> from information in the text only, without outside knowledge</p>
+                      <p className="text-black/90">Can involve mathematical calculations (ages, dates, percentages)</p>
+                      <p className="text-black/90 text-sm italic mt-1">Example: "If clouds, then rain" + "Clouds in Melbourne" → It's raining in Melbourne</p>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Keyword Scanning</h3>
+                      <p className="text-black/90 mb-2">Don't rely on scanning alone - use in balance with full understanding</p>
+                      <p className="text-black/90 mb-1"><strong className="font-semibold text-cyan-600">Best used with:</strong> Uncommon words, numbers/dates, words from question phrasing</p>
+                      <p className="text-black/90">When found, read the full sentence for <strong className="font-semibold text-cyan-600">context</strong>. Check if keyword appears later again.</p>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Concept Scanning</h3>
+                      <p className="text-black/90 mb-1">Focus on understanding <strong className="font-semibold text-cyan-600">related content</strong>, not just exact keyword matches</p>
+                      <p className="text-black/90">Scan for ideas, not exact words. Especially useful for inference and tone-based questions</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-cyan-400 to-teal-600 bg-clip-text text-transparent leading-none">4</div>
+                  <div className="text-base text-black/70 mt-3">skills</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Techniques */}
+            <section 
+              id="techniques"
+              className={`backdrop-blur-xl border-l-4 border-blue-500 p-8 transition-all duration-700 ${hoveredSection === 'techniques' ? 'bg-blue-400/35 shadow-xl scale-[1.01]' : 'bg-blue-400/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('techniques')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent mb-4">Key Techniques</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Speed Reading</h3>
+                      <div className="space-y-1 text-black/90">
+                        <p>Avoid subvocalizing (no inner voice while reading). Let your eyes glide.</p>
+                        <p>Read in <strong className="font-semibold text-blue-600">chunks</strong> of 3-5 words at a time as phrases</p>
+                        <p>Keep eyes centered on page, use peripheral vision</p>
+                        <p>The "magic zone" appears 3-5 minutes into practice</p>
+                        <p>Target: <strong className="font-semibold text-blue-600">750 words per minute</strong></p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Maximizing Valuable Retention</h3>
+                      <div className="space-y-1 text-black/90">
+                        <p>Selectively retain only <strong className="font-semibold text-blue-600">valuable</strong> information:</p>
+                        <ul className="list-disc list-inside ml-4 text-sm">
+                          <li>Contention (one-sentence summary)</li>
+                          <li>Tone for inference questions</li>
+                          <li>Paragraph categorization</li>
+                        </ul>
+                        <p>Spend <strong className="font-semibold text-blue-600">5-10 seconds</strong> per paragraph during speed reading</p>
+                        <p>After reading: go straight to question, find key point, return to known location to scan. Be "on the hunt"</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Time Management</h3>
+                      <div className="space-y-1 text-black/90">
+                        <p>Use <strong className="font-semibold text-blue-600">time stamps</strong> to set goals (e.g., "By 10:30 finish 4 RC sets")</p>
+                        <p>Target time per set:</p>
+                        <ul className="list-disc list-inside ml-4 text-sm">
+                          <li>Reading comprehension: <strong className="font-semibold text-blue-600">2-2.5 minutes</strong></li>
+                          <li>True/False/Can't Tell: <strong className="font-semibold text-blue-600">1-1.5 minutes</strong></li>
+                        </ul>
+                        <p>If behind: DON'T change strategy. Skip more strategically. Guesses on hardest sets.</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Pre-selection Strategy</h3>
+                      <div className="space-y-1 text-black/90">
+                        <p>Pre-select answers most likely to be correct, then verify through keyword scanning</p>
+                        <p>Read passage → identify if open → read all answers → <strong className="font-semibold text-blue-600">eliminate</strong> least likely → pre-select most likely → keyword scan to verify</p>
+                        <p>Watch for: absolute vs non-absolute language, common sense, future/past/present (can't predict future)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Passage Navigation</h3>
+                      <div className="space-y-1 text-black/90">
+                        <p>Skip if: very long or unfamiliar/boring topic</p>
+                        <p>Don't skip True/False/Can't Tell sets</p>
+                        <p>Skip strategy: Answer <strong className="font-semibold text-blue-600">all 4 questions</strong> in a set or none</p>
+                        <p>If confusing in first few seconds → move on</p>
+                        <p>Towards end: focus on filling gaps, don't skip</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-blue-400 to-indigo-600 bg-clip-text text-transparent leading-none">5</div>
+                  <div className="text-base text-black/70 mt-3">techniques</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Practice Framework */}
+            <section 
+              id="practice"
+              className={`backdrop-blur-xl border-l-4 border-indigo-500 p-8 transition-all duration-700 ${hoveredSection === 'practice' ? 'bg-indigo-400/35 shadow-xl scale-[1.01]' : 'bg-indigo-400/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('practice')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent mb-4">Practice Framework</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Mini-Mock Workflow</h3>
+                      <div className="space-y-2 text-black/90">
+                        <ol className="list-decimal list-inside space-y-1">
+                          <li>Read passage and identify the <strong className="font-semibold text-indigo-600">contention</strong></li>
+                          <li>Underline initial ideas (Successor approach)</li>
+                          <li>Write down everything you remember without re-checking</li>
+                          <li>Note: contention, important details, inference/tone support</li>
+                          <li>For open-ended Qs: build explanation from recall</li>
+                        </ol>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/40 backdrop-blur-xl rounded-xl p-5 shadow-md border border-white/50 transition-all duration-500 hover:bg-white/60 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                      <h3 className="text-xl font-bold text-black/90 mb-2">Pre-selection Practice</h3>
+                      <div className="space-y-2 text-black/90">
+                        <p>Practice <strong className="font-semibold text-indigo-600">5-6 sets</strong> without looking at the passage - just evaluate answer options</p>
+                        <p>Practice 4-5 sets where you read once, then pre-select answers before verifying</p>
+                        <p>Build <strong className="font-semibold text-indigo-600">intuition</strong> through repeated practice until it becomes a gut feeling</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-indigo-400 to-purple-600 bg-clip-text text-transparent leading-none">2</div>
+                  <div className="text-base text-black/70 mt-3">frameworks</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Final Tips */}
+            <section 
+              id="tips"
+              className={`backdrop-blur-xl border-l-4 border-violet-500 p-8 transition-all duration-700 ${hoveredSection === 'tips' ? 'bg-violet-300/35 shadow-xl scale-[1.01]' : 'bg-violet-300/25 shadow-lg'}`}
+              onMouseEnter={() => setHoveredSection('tips')}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div className="flex items-start gap-16">
+                <div className="flex-1 pr-12">
+                  <h2 className="text-4xl font-bold bg-gradient-to-r from-violet-500 to-purple-600 bg-clip-text text-transparent mb-4">Final Tips</h2>
+                  <ul className="list-disc list-inside text-black/90 space-y-2">
+                    <li>Watch for <strong className="font-semibold text-violet-600">negating terms</strong> like "do not," "cannot," or "except" in questions</li>
+                    <li>Read actively and make mental notes of each paragraph's content</li>
+                    <li>Look for keywords in all areas of text - they can appear in <strong className="font-semibold text-violet-600">multiple sections</strong></li>
+                    <li>Be careful with qualifiers like "almost always" versus "always"</li>
+                    <li>Never use <strong className="font-semibold text-violet-600">external knowledge</strong> or make assumptions beyond the text</li>
+                    <li>Beware of statements that are mostly true but include additional information not in the passage</li>
+                    <li>Use keywords (nouns, objects not central to passage) to speed up information location</li>
+                    <li><strong className="font-semibold text-violet-600">Flag and guess</strong> if you're not sure within the first few seconds</li>
+                    <li>For hypothetical questions with "if," apply the premise as <strong className="font-semibold text-violet-600">absolutely true</strong></li>
+                    <li>80-90% of answers involve some level of <strong className="font-semibold text-violet-600">inference</strong></li>
+                  </ul>
+                </div>
+                <div className="flex-shrink-0 flex flex-col items-end justify-center">
+                  <div className="text-[10rem] font-bold bg-gradient-to-br from-violet-400 to-purple-600 bg-clip-text text-transparent leading-none">10</div>
+                  <div className="text-base text-black/70 mt-3">tips</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<VerbalReasoning />, document.getElementById('root'));
+  </script>
+</body>
+</html>
