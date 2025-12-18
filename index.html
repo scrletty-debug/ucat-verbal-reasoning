@@ -8,8 +8,6 @@
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -29,15 +27,113 @@
       const [hoveredBlob, setHoveredBlob] = useState(null);
       const [hoveredSection, setHoveredSection] = useState(null);
       const [hoveredNav, setHoveredNav] = useState(null);
+      const [sidebarOpen, setSidebarOpen] = useState(false);
+      const [hoveredSidebar, setHoveredSidebar] = useState(null);
 
       const scrollToSection = (sectionId) => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
       };
 
+      const sidebarPages = [
+        { id: 'what-is-ucat', label: 'What is the UCAT?', color: 'blue' },
+        { id: 'how-to-practice', label: 'How to Practice', color: 'green' },
+        { id: 'verbal-reasoning', label: 'Verbal Reasoning', color: 'indigo', active: true },
+        { id: 'decision-making', label: 'Decision Making', color: 'purple' },
+        { id: 'quantitative-reasoning', label: 'Quantitative Reasoning', color: 'cyan' },
+        { id: 'situational-judgement', label: 'Situational Judgement', color: 'pink' }
+      ];
+
       return (
         <div className="relative min-h-screen bg-gradient-to-b from-blue-100 via-blue-50 to-white overflow-hidden" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+          {/* Sidebar Toggle Button */}
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="fixed top-3 left-6 z-[60] p-2 transition-opacity duration-300 hover:opacity-70"
+          >
+            <svg className="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {sidebarOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+
+          {/* Retractable Sidebar */}
+          <div 
+            className={`fixed top-0 left-0 h-full bg-white/95 backdrop-blur-xl shadow-2xl transition-all duration-500 ease-in-out z-50 border-r border-gray-200 ${
+              sidebarOpen ? 'w-80 translate-x-0' : 'w-80 -translate-x-full'
+            }`}
+          >
+            <div className="p-6 h-full overflow-y-auto">
+              <div className="mb-8 mt-12">
+                <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">UCAT Guide</h2>
+                <p className="text-gray-600 text-sm mt-2">Navigate through sections</p>
+              </div>
+
+              <nav className="space-y-3">
+                {sidebarPages.map((page) => (
+                  <button
+                    key={page.id}
+                    onClick={() => {
+                      // In a real app, this would navigate to different pages
+                      console.log(`Navigate to ${page.id}`);
+                      if (!page.active) {
+                        alert(`${page.label} page coming soon!`);
+                      }
+                    }}
+                    onMouseEnter={() => setHoveredSidebar(page.id)}
+                    onMouseLeave={() => setHoveredSidebar(null)}
+                    className={`w-full text-left p-4 rounded-xl transition-all duration-300 flex items-center gap-3 ${
+                      page.active
+                        ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg'
+                        : hoveredSidebar === page.id
+                        ? 'bg-gray-100 scale-105 shadow-md'
+                        : 'bg-gray-50 hover:bg-gray-100'
+                    }`}
+                    style={{
+                      backgroundColor: !page.active && hoveredSidebar === page.id ? `rgba(${
+                        page.color === 'blue' ? '59, 130, 246' :
+                        page.color === 'green' ? '34, 197, 94' :
+                        page.color === 'indigo' ? '99, 102, 241' :
+                        page.color === 'purple' ? '168, 85, 247' :
+                        page.color === 'cyan' ? '6, 182, 212' :
+                        page.color === 'pink' ? '236, 72, 153' : '156, 163, 175'
+                      }, 0.15)` : undefined
+                    }}
+                  >
+                    <div className="flex-1">
+                      <p className={`font-semibold ${page.active ? 'text-white' : 'text-black/90'}`}>
+                        {page.label}
+                      </p>
+                      {page.active && <p className="text-xs text-white/80 mt-0.5">Current Page</p>}
+                    </div>
+                    {!page.active && (
+                      <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    )}
+                  </button>
+                ))}
+              </nav>
+
+              <div className="mt-8 p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                <p className="text-sm text-indigo-900 font-medium mb-2">Quick Tip</p>
+                <p className="text-xs text-indigo-700">Use the top navigation to jump between sections within this page!</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Overlay when sidebar is open */}
+          {sidebarOpen && (
+            <div 
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 transition-opacity duration-300"
+              onClick={() => setSidebarOpen(false)}
+            ></div>
+          )}
+
           {/* Navigation Bar */}
-          <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-lg">
+          <nav className="fixed top-0 left-0 right-0 z-30 bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-lg">
             <div className="flex items-center justify-center gap-4 py-4 px-6">
               {[
                 { id: 'overview', label: 'Overview', color: 'blue' },
@@ -55,8 +151,8 @@
                   onMouseLeave={() => setHoveredNav(null)}
                   className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                     hoveredNav === item.id 
-                      ? `bg-${item.color}-400/30 scale-105 shadow-md` 
-                      : 'bg-transparent hover:bg-gray-100/50'
+                      ? `scale-105 shadow-md` 
+                      : 'hover:bg-gray-100/50'
                   }`}
                   style={{
                     backgroundColor: hoveredNav === item.id ? `rgba(${
