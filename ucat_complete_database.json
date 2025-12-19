@@ -1,0 +1,911 @@
+{
+  "metadata": {
+    "title": "UCAT Verbal Reasoning Complete Database",
+    "description": "All 100 questions with explanations",
+    "total_questions": 100,
+    "total_passages": 25,
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "p": 1,
+      "q": 1,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Passage states 'primarily due to intensive cultivation methods and year-round growing seasons in controlled environments'",
+      "text": "Urban agriculture produces higher yields per acre than rural agriculture primarily because of year-round growing in controlled environments."
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "ans": "C",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Correlation shown but 'exact causal mechanisms remain under investigation'",
+      "text": "The presence of community gardens directly causes a reduction in property crime."
+    },
+    {
+      "p": 1,
+      "q": 3,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Passage discusses both economic factors and social benefits",
+      "text": "Which of the following can be inferred from the passage?"
+    },
+    {
+      "p": 1,
+      "q": 4,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Critics 'point to the high initial investment costs and ongoing maintenance requirements'",
+      "text": "According to the passage, critics of urban agriculture are primarily concerned with:"
+    },
+    {
+      "p": 2,
+      "q": 5,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Contemporary scientists 'largely reject the strong version'",
+      "text": "The strong version of the Sapir-Whorf hypothesis has been conclusively proven by scientific research."
+    },
+    {
+      "p": 2,
+      "q": 6,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Differences are 'in the speed of recognition rather than in the fundamental ability to perceive'",
+      "text": "Russian speakers can perceive color distinctions that English speakers cannot perceive at all."
+    },
+    {
+      "p": 2,
+      "q": 7,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Consensus: language 'can influence certain aspects of cognition' but doesn't imprison speakers",
+      "text": "The passage suggests that:"
+    },
+    {
+      "p": 2,
+      "q": 8,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Presents multiple perspectives, mixed evidence, and current consensus\u2014balanced and analytical",
+      "text": "Which of the following best describes the author's tone toward the Sapir-Whorf hypothesis?"
+    },
+    {
+      "p": 3,
+      "q": 9,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Success 'did not translate to other regions, as pirates simply shifted their operations'",
+      "text": "The international naval response to Somali piracy eliminated maritime piracy worldwide."
+    },
+    {
+      "p": 3,
+      "q": 10,
+      "ans": "C",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Passage says they 'began operating' but doesn't clarify if this was first time ever",
+      "text": "Private security contractors were never deployed on merchant vessels before 2008."
+    },
+    {
+      "p": 3,
+      "q": 11,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Root causes are 'complex and deeply intertwined with political instability, poverty, and weak governance'",
+      "text": "According to the passage, which statement about modern piracy is most accurate?"
+    },
+    {
+      "p": 3,
+      "q": 12,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Pirates 'simply shifted their operations to less-protected waters'",
+      "text": "The passage indicates that successful anti-piracy measures in Somalia:"
+    },
+    {
+      "p": 4,
+      "q": 13,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Placebos trigger 'measurable physiological changes, including the release of endorphins and dopamine'",
+      "text": "Placebos produce effects that are purely psychological with no physical basis."
+    },
+    {
+      "p": 4,
+      "q": 14,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "'Some physicians argue... Others contend'\u2014shows disagreement among physicians",
+      "text": "All physicians support the use of placebos in clinical practice."
+    },
+    {
+      "p": 4,
+      "q": 15,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Size, color, and method are mentioned; cost is never mentioned",
+      "text": "Which of the following factors does NOT influence placebo effectiveness according to the passage?"
+    },
+    {
+      "p": 4,
+      "q": 16,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Potentially resolving the ethical dilemma while maintaining therapeutic value'",
+      "text": "Open-label placebos are significant because they potentially:"
+    },
+    {
+      "p": 5,
+      "q": 17,
+      "ans": "C",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Passage says '51 churches in the City of London alone'\u2014total lifetime count unknown",
+      "text": "Wren designed exactly 51 churches during his lifetime."
+    },
+    {
+      "p": 5,
+      "q": 18,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Scientific background 'profoundly shaped his design methodology'",
+      "text": "Wren's scientific training influenced his architectural approach."
+    },
+    {
+      "p": 5,
+      "q": 19,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "'Unlike Continental contemporaries who favored elaborate Baroque ornamentation, Wren emphasized structural clarity and functional design'",
+      "text": "Compared to Continental Baroque architects, Wren's style was:"
+    },
+    {
+      "p": 5,
+      "q": 20,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Design priorities 'reflected Protestant worship practices'",
+      "text": "The passage suggests that Wren's church interiors reflected:"
+    },
+    {
+      "p": 6,
+      "q": 21,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Current quantum computers 'remain relatively primitive' and can't yet break encryption",
+      "text": "Current quantum computers can already break modern encryption systems."
+    },
+    {
+      "p": 6,
+      "q": 22,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Standardization 'expected by 2024' but not finalized/implemented globally",
+      "text": "Post-quantum cryptographic standards have been finalized and implemented globally."
+    },
+    {
+      "p": 6,
+      "q": 23,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Any eavesdropping 'would disturb the quantum state and alert the legitimate parties'",
+      "text": "According to the passage, quantum key distribution is:"
+    },
+    {
+      "p": 6,
+      "q": 24,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Organizations 'must begin this process before quantum computers become sufficiently powerful'",
+      "text": "The passage suggests that organizations should:"
+    },
+    {
+      "p": 7,
+      "q": 25,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Cats 'essentially domesticated themselves' through natural selection, not human breeding",
+      "text": "Humans actively selected and bred wild cats to create domestic cats."
+    },
+    {
+      "p": 7,
+      "q": 26,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Persecution 'may have contributed to plague outbreaks by allowing rodent populations to flourish'",
+      "text": "The persecution of cats in medieval Europe may have worsened plague outbreaks."
+    },
+    {
+      "p": 7,
+      "q": 27,
+      "ans": "A",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Reflects 'more recent domestication timeline' and 'limited genetic change'",
+      "text": "Compared to domestic dogs, domestic cats:"
+    },
+    {
+      "p": 7,
+      "q": 28,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Cats that were 'less fearful... enjoyed better access to prey, creating a selective pressure for tameness'",
+      "text": "The passage indicates that cat domestication primarily resulted from:"
+    },
+    {
+      "p": 8,
+      "q": 29,
+      "ans": "C",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Contains 'approximately 900 trees'\u2014could be slightly more or less",
+      "text": "The Bosco Verticale contains more than 900 trees."
+    },
+    {
+      "p": 8,
+      "q": 30,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Urban planners argue 'ground-level parks and green spaces remain essential'",
+      "text": "Vertical forests eliminate the need for traditional urban parks."
+    },
+    {
+      "p": 8,
+      "q": 31,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Requires 'sophisticated irrigation systems and ongoing botanical maintenance' but offers multiple benefits",
+      "text": "According to the passage, vertical forests:"
+    },
+    {
+      "p": 8,
+      "q": 32,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Critics 'question whether the high construction costs and maintenance requirements offset the environmental advantages'",
+      "text": "The main concern raised by critics of vertical forests is:"
+    },
+    {
+      "p": 9,
+      "q": 33,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Rise 'occurred too rapidly to reflect evolutionary changes'\u2014environmental, not evolutionary",
+      "text": "The Flynn Effect demonstrates that human intelligence has evolved rapidly over the past century."
+    },
+    {
+      "p": 9,
+      "q": 34,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Declines noted in 'some developed nations' (Norway, Denmark, Finland, France)\u2014not all",
+      "text": "IQ scores are currently declining in all developed nations."
+    },
+    {
+      "p": 9,
+      "q": 35,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Nutrition, education, and technology mentioned; genetic mutations are not",
+      "text": "Which of the following is NOT mentioned as a potential cause of the Flynn Effect?"
+    },
+    {
+      "p": 9,
+      "q": 36,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Data 'remain controversial' and researchers question what measurements reflect",
+      "text": "The passage suggests that recent IQ score declines:"
+    },
+    {
+      "p": 10,
+      "q": 37,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Teams 'cannot be relegated to lower divisions regardless of performance'",
+      "text": "American professional sports teams can be relegated to lower divisions based on poor performance."
+    },
+    {
+      "p": 10,
+      "q": 38,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Revenue sharing 'theoretically' enables competition\u2014not guarantees equal success",
+      "text": "The passage states that revenue sharing guarantees all teams equal success in American leagues."
+    },
+    {
+      "p": 10,
+      "q": 39,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Fans view promotion/relegation as 'integral to sporting meritocracy'",
+      "text": "The primary advantage of promotion-relegation systems according to supporters is:"
+    },
+    {
+      "p": 10,
+      "q": 40,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Attempts to introduce closed systems 'have met fierce resistance from fans'",
+      "text": "According to the passage, European football fans generally:"
+    },
+    {
+      "p": 11,
+      "q": 41,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Microplastics enter through 'multiple pathways' including breakdown, clothing fibers, and microbeads",
+      "text": "Microplastics enter marine environments exclusively through the breakdown of larger plastic debris."
+    },
+    {
+      "p": 11,
+      "q": 42,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Impacts 'remain incompletely understood but increasingly concerning'",
+      "text": "The effects of microplastic consumption on wild marine populations are fully understood."
+    },
+    {
+      "p": 11,
+      "q": 43,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Multiple approaches needed but 'address only new pollution' or have limitations",
+      "text": "According to the passage, which statement about addressing microplastic pollution is most accurate?"
+    },
+    {
+      "p": 11,
+      "q": 44,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Controlled experiments 'may not accurately reflect complex marine ecosystems'",
+      "text": "The passage implies that laboratory studies of microplastic effects:"
+    },
+    {
+      "p": 12,
+      "q": 45,
+      "ans": "C",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Story's 'veracity remains questionable'\u2014can't tell if proven accurate",
+      "text": "The story of Kaldi discovering coffee has been proven historically accurate."
+    },
+    {
+      "p": 12,
+      "q": 46,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Ottoman authorities 'forbidding the export of fertile seeds to maintain their monopoly'",
+      "text": "Ottoman authorities freely exported coffee seeds to promote cultivation globally."
+    },
+    {
+      "p": 12,
+      "q": 47,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Initiatives 'remain controversial' with both critics and supporters",
+      "text": "Fair trade initiatives in coffee are:"
+    },
+    {
+      "p": 12,
+      "q": 48,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "European powers 'often relying on enslaved or coerced labor'",
+      "text": "The passage suggests that coffee's global expansion was:"
+    },
+    {
+      "p": 13,
+      "q": 49,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Error rate 'has remained stable for decades despite technological advances'",
+      "text": "Technological advances have eliminated diagnostic errors in modern medicine."
+    },
+    {
+      "p": 13,
+      "q": 50,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Biases are 'mental shortcuts, though efficient in many contexts'\u2014don't always lead to errors",
+      "text": "Cognitive biases always lead to incorrect medical diagnoses."
+    },
+    {
+      "p": 13,
+      "q": 51,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "AI 'inherit biases from training data and lack human judgment' but can help",
+      "text": "According to the passage, artificial intelligence in diagnosis:"
+    },
+    {
+      "p": 13,
+      "q": 52,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Requires 'multifaceted interventions' including checklists, culture change, and AI",
+      "text": "The passage suggests that reducing diagnostic errors requires:"
+    },
+    {
+      "p": 14,
+      "q": 53,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Passage states 'A single manuscript Bible required approximately two years of scribal labor'",
+      "text": "Before the printing press, a manuscript Bible took approximately two years to produce."
+    },
+    {
+      "p": 14,
+      "q": 54,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "'Clandestine printing continued, with prohibited texts circulating through underground networks'",
+      "text": "Censorship of printed materials was completely effective in preventing the circulation of banned texts."
+    },
+    {
+      "p": 14,
+      "q": 55,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Enabled Protestant Reformation and accelerated Scientific Revolution\u2014multiple aspects",
+      "text": "Which of the following can be inferred about the printing press's impact?"
+    },
+    {
+      "p": 14,
+      "q": 56,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Tension 'remains relevant in contemporary debates about internet regulation'",
+      "text": "The author draws a parallel between print censorship and:"
+    },
+    {
+      "p": 15,
+      "q": 57,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Bleaching occurs when temperatures exceed normal 'by just 1-2\u00b0C'\u2014not 5\u00b0C",
+      "text": "Coral bleaching occurs when water temperatures increase by at least 5\u00b0C above normal."
+    },
+    {
+      "p": 15,
+      "q": 58,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "Interventions 'address symptoms rather than causes' and require emission reductions",
+      "text": "Marine protected areas alone are sufficient to prevent coral reef extinction."
+    },
+    {
+      "p": 15,
+      "q": 59,
+      "ans": "A",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Partnership 'enables reef construction in nutrient-poor tropical waters'",
+      "text": "The symbiotic relationship between corals and zooxanthellae is significant because:"
+    },
+    {
+      "p": 15,
+      "q": 60,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Without dramatic reductions in greenhouse gas emissions, coral reefs globally face functional extinction'",
+      "text": "According to the passage, effective coral reef conservation ultimately requires:"
+    },
+    {
+      "p": 16,
+      "q": 61,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Procrastination 'stems not from laziness but from poor emotion regulation'",
+      "text": "Procrastination is primarily caused by laziness."
+    },
+    {
+      "p": 16,
+      "q": 62,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "'While some perfectionists procrastinate'\u2014implies not all perfectionists procrastinate",
+      "text": "All perfectionists are procrastinators."
+    },
+    {
+      "p": 16,
+      "q": 63,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Effective interventions 'focus on emotional regulation rather than time management'",
+      "text": "According to the passage, effective anti-procrastination strategies should focus on:"
+    },
+    {
+      "p": 16,
+      "q": 64,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Viewing as character flaw is contrasted with more productive approach of understanding emotion regulation",
+      "text": "The passage suggests that viewing procrastination as a character flaw is:"
+    },
+    {
+      "p": 17,
+      "q": 65,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "'Few merchants traveled the entire distance'\u2014goods passed through intermediaries",
+      "text": "Most individual merchants traveled the entire length of the Silk Road from China to Europe."
+    },
+    {
+      "p": 17,
+      "q": 66,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Mongol Empire's 'unified control facilitated relatively safe long-distance travel'",
+      "text": "The Mongol Empire facilitated safer Silk Road travel during its existence."
+    },
+    {
+      "p": 17,
+      "q": 67,
+      "ans": "D",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Mongol collapse, maritime routes, and Black Death mentioned\u2014printing press is not",
+      "text": "Which of the following did NOT contribute to the Silk Road's decline according to the passage?"
+    },
+    {
+      "p": 17,
+      "q": 68,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Silk Road 'transmitted far more than commercial goods' including religions and technologies",
+      "text": "The passage indicates that the Silk Road:"
+    },
+    {
+      "p": 18,
+      "q": 69,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "CRISPR 'Adapted from bacterial immune systems'\u2014not originally developed for medicine",
+      "text": "CRISPR technology was originally developed specifically for medical applications."
+    },
+    {
+      "p": 18,
+      "q": 70,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Scientific community 'widely condemned this work as premature and ethically irresponsible'",
+      "text": "The scientific community universally supported He Jiankui's creation of gene-edited babies."
+    },
+    {
+      "p": 18,
+      "q": 71,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Off-target effects are 'where CRISPR edits unintended genetic locations'",
+      "text": "Off-target effects in CRISPR editing refer to:"
+    },
+    {
+      "p": 18,
+      "q": 72,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Germline editing raises 'profound ethical questions' and is banned in most nations",
+      "text": "The passage suggests that germline editing is:"
+    },
+    {
+      "p": 19,
+      "q": 73,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Memory is 'far more reconstructive' and involves 'actively rebuilding experiences'",
+      "text": "Human memory functions like an accurate recording device."
+    },
+    {
+      "p": 19,
+      "q": 74,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Convinced 'approximately 25% of participants'\u2014not all",
+      "text": "Loftus's research convinced all participants that they had been lost in shopping malls."
+    },
+    {
+      "p": 19,
+      "q": 75,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Repeated suggestion strengthens false memories' and imagination increases susceptibility",
+      "text": "According to the passage, which factor increases false memory susceptibility?"
+    },
+    {
+      "p": 19,
+      "q": 76,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Understanding mechanisms 'doesn't provide foolproof protection'\u2014even experts experience them",
+      "text": "The passage implies that understanding false memory mechanisms:"
+    },
+    {
+      "p": 20,
+      "q": 77,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "'Unlike traditional conservation... rewilding promotes dynamic natural processes'",
+      "text": "Rewilding aims to maintain ecosystems in specific historical states."
+    },
+    {
+      "p": 20,
+      "q": 78,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Wolf reintroduction allowed vegetation recovery which 'Beaver populations increased'",
+      "text": "The reintroduction of wolves to Yellowstone had no effect on beaver populations."
+    },
+    {
+      "p": 20,
+      "q": 79,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Trophic cascades 'demonstrate how apex predators structure entire ecosystems'",
+      "text": "Trophic cascades refer to:"
+    },
+    {
+      "p": 20,
+      "q": 80,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Challenges include 'conflict with agricultural interests' and 'timescales involved can frustrate stakeholders'",
+      "text": "According to the passage, challenges facing rewilding include:"
+    },
+    {
+      "p": 21,
+      "q": 81,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Sagrada Fam\u00edlia 'remains under construction over a century after its inception'",
+      "text": "The Sagrada Fam\u00edlia was completed during Gaud\u00ed's lifetime."
+    },
+    {
+      "p": 21,
+      "q": 82,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "'Some critics dismissed his work... However, others recognized'\u2014mixed reception",
+      "text": "All contemporary critics praised Gaud\u00ed's architectural work."
+    },
+    {
+      "p": 21,
+      "q": 83,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Method 'predated computer modeling by decades yet achieved structural efficiency'",
+      "text": "Gaud\u00ed's hanging chain models were significant because they:"
+    },
+    {
+      "p": 21,
+      "q": 84,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Mixed contemporary reception but 'Modern architectural opinion has largely vindicated Gaud\u00ed'",
+      "text": "The passage suggests that Gaud\u00ed's reputation:"
+    },
+    {
+      "p": 22,
+      "q": 85,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Finland experiment showed 'no significant employment effects compared to control groups'",
+      "text": "Finland's UBI experiment significantly increased employment rates among participants."
+    },
+    {
+      "p": 22,
+      "q": 86,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "'Economists disagree about inflationary effects'",
+      "text": "All economists agree that UBI would not cause inflation."
+    },
+    {
+      "p": 22,
+      "q": 87,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Means-tested benefits 'create disincentives to work by reducing payments as income increases'",
+      "text": "According to the passage, means-tested benefits can:"
+    },
+    {
+      "p": 22,
+      "q": 88,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Funding mechanisms and economic effects might differ dramatically at larger scales'",
+      "text": "The main concern about extrapolating from UBI pilots to national programs is:"
+    },
+    {
+      "p": 23,
+      "q": 89,
+      "ans": "A",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Listening to music 'stimulates the reward system, releasing dopamine'",
+      "text": "Listening to music releases dopamine in the brain."
+    },
+    {
+      "p": 23,
+      "q": 90,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "'Debates continue about causation' and 'genetic predispositions likely also play roles'",
+      "text": "The passage definitively proves that music training alone causes all observed cognitive advantages in musicians."
+    },
+    {
+      "p": 23,
+      "q": 91,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Melodic intonation therapy 'helps stroke patients with aphasia regain speech'",
+      "text": "Melodic intonation therapy is used to treat:"
+    },
+    {
+      "p": 23,
+      "q": 92,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Music therapy 'remains underutilized in many healthcare settings' despite applications",
+      "text": "According to the passage, music therapy is:"
+    },
+    {
+      "p": 24,
+      "q": 93,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Fleming discovered it but 'could not purify or produce penicillin in quantities'\u2014took another decade",
+      "text": "Fleming immediately developed methods for mass-producing penicillin after discovering it."
+    },
+    {
+      "p": 24,
+      "q": 94,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Currently 'approximately 700,000 people annually'\u201410 million is projection for 2050",
+      "text": "Antibiotic-resistant infections currently kill approximately 10 million people annually."
+    },
+    {
+      "p": 24,
+      "q": 95,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Many researchers had previously noted similar phenomena without pursuing the implications'",
+      "text": "The passage suggests that Fleming's discovery was significant because:"
+    },
+    {
+      "p": 24,
+      "q": 96,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "Requires 'developing new antibiotics, reducing inappropriate prescribing, and implementing better infection control'",
+      "text": "According to the passage, addressing antibiotic resistance requires:"
+    },
+    {
+      "p": 25,
+      "q": 97,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Easy",
+      "exp": "Dark matter 'remains undetected directly'",
+      "text": "Dark matter has been directly detected and analyzed in laboratories."
+    },
+    {
+      "p": 25,
+      "q": 98,
+      "ans": "B",
+      "type": "TF",
+      "diff": "Medium",
+      "exp": "'Despite decades of searching... no WIMP has been definitively detected'",
+      "text": "All physicists agree that WIMPs definitely exist."
+    },
+    {
+      "p": 25,
+      "q": 99,
+      "ans": "B",
+      "type": "MC",
+      "diff": "Easy",
+      "exp": "Existence 'inferred from gravitational effects' like galaxy rotation and gravitational lensing",
+      "text": "Dark matter's existence is primarily inferred from:"
+    },
+    {
+      "p": 25,
+      "q": 100,
+      "ans": "C",
+      "type": "MC",
+      "diff": "Medium",
+      "exp": "'Resolving this mystery will transform our understanding of the cosmos'",
+      "text": "The passage suggests that researching dark matter:"
+    }
+  ]
+}
